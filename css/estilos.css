@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border: black;
+    border-style: solid;
+}
+
+/* inicio navbar */
+#navbar {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    z-index: 100;
+    max-height: 80px;
+}
+
+.navbar__box__img {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.navbar__img img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.menu__ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu__list :hover {
+    background-color: red;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.menu__item {
+    color: white;
+    font-family: 'courgette';
+    transition: all 0.8s ease;
+    padding: 5px;
+}
+
+.nav-link :hover {
+    background-color: red;
+    padding: 8px;
+    transition: all 0.8s ease;
+    border-radius: 30px;
+}
+
+.dropdown-toggle {
+    color: white;
+}
+
+.dropdown-item {
+    font-family: 'courgette';
+    font-weight: bold;
+    font-size: small;
+    color: black;
+}
+
+.dropdown-item:hover {
+    color: white;
+}
+
+
+/* fin navbar */
+
+/* inicio carrusel */
+.carousel {
+    padding-top: 100px;
+}
+
+.carousel-item {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.486);
+    margin-bottom: 20px;
+}
+
+.carousel-caption h5 {
+    text-decoration: underline;
+}
+
+.carousel-caption p {
+    color: white;
+}
+
+.carousel-control-prev{
+    margin-left: 120px;
+}
+
+.carousel-control-next{
+    margin-right: 120px;
+}
+
+/* fin carrusel */
+
+/* inicio backgound "nosotros" */
+#Nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url(../img/galeria1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+    padding: 100px 60px;
+    margin: 30px auto;
+}
+
+.background__img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.title-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: rgb(152, 20, 20);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.445);
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* fin background "nosotros" */
+
+
+/* inicio seccion discos */
+#discos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color: #285AEB;
+    background: linear-gradient(#e66465, #9198e5, rgb(223, 74, 19));
+    background-clip: content-box;
+    padding: 20px 10px
+}
+
+.nuestros-trabajos {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.albums {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+
+/* fin seccion discos */
+
+/* inicio seccion "servicios" */
+#article-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+    background-image: url(../img/pngtree-white-vintage-brick-wall-literary-banner-image_149156.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    max-width: 400px;
+}
+
+.article p {
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+
+.imgservicios {
+    width: 100%;
+    height: 200px;
+}
+
+.h3-servicios {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-top: 100px;
+    color: black;
+}
+
+/* fin seccion "servicios" */
+
+/* inicio seccion "equipamiento" */
+#Equipamiento {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-top: 100px;
+    color: black;
+}
+
+.container__equipamiento {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.container__equipamiento article h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: large;
+    padding: 8px;
+}
+
+.orange {
+    display: block;
+    text-align: left;
+    font-size: x-small;
+    width: 300px;
+    border-color: black;
+    border-style: dashed;
+    padding: 8px;
+}
+
+.orange img {
+    width: 100%;
+    height: 200px;
+}
+
+.hiwatt {
+    display: block;
+    text-align: left;
+    font-size: x-small;
+    width: 300px;
+    border-color: black;
+    border-style: dashed;
+    padding: 8px;
+}
+
+.hiwatt img {
+    width: 100%;
+    height: 200px;
+}
+
+.bateria {
+    display: block;
+    text-align: left;
+    font-size: x-small;
+    width: 300px;
+    border-color: black;
+    border-style: dashed;
+    padding: 8px;
+}
+
+.bateria img {
+    width: 100%;
+    height: 200px;
+}
+
+.universal-audio {
+    display: block;
+    text-align: left;
+    font-size: x-small;
+    width: 300px;
+    border-color: black;
+    border-style: dashed;
+    padding: 8px;
+}
+
+.universal-audio img {
+    width: 100%;
+    height: 200px;
+}
+
+/* fin seccion "servicios" */
+
+
+/* inicio seccion galeria imagenes */
+.grid-container {
+    display: grid;
+    background-image: url(../img/141125859-fondo-de-textura-de-metal-negro.jpg);
+    background-attachment: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    border-color: rgb(118, 3, 24);
+    border-style: solid;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 20px;
+}
+
+#Galeria {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding-top: 30px;
+    color: black;
+}
+
+
+#Fotos {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 100px;
+    color: black;
+}
+
+.grid-item a {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.grid-item :hover {
+    filter: blur(4px);
+    transition: all 0.5s;
+}
+
+.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.335);
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.light-box img {
+    width: 75vw;
+    max-height: 70vh;
+}
+
+.light-box:target {
+    transform: scale(1);
+}
+
+.close {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.next {
+    display: block;
+    background-color: red;
+    color: white;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* fin galeria imagenes */
+
+#Videos {
+    display: flex;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: underline;
+    padding: 100px;
+    color: black;
+}
+
+.grid-video6 {
+    grid-row: 3 / 6;
+    grid-column: 3 / 4;
+}
+
+.grid-video5 {
+    grid-row: 3 / 6;
+    grid-column: 2 / 3;
+}
+
+.grid-video4 {
+    grid-row: 3 / 6;
+    grid-column: 1 / 2;
+}
+
+.grid-video3 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.grid-video2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.grid-video1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+/* fin seccion galeria-grid */
+
+/* inicio seccion "Contacto" */
+
+
+
+.consulta {
+    text-align: center;
+    padding: 100px 0 50px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+
+.form__background {
+    display: flex;
+    background-image: url(../img/equipos5.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+#form {
+    width: 450px;
+    margin: auto;
+    background-color: rgba(255, 166, 0, 0.122);
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.nombre,
+.email {
+    color: white;
+    font-weight: bold;
+    font-family: 'courgette';
+}
+
+.box-input p {
+    color: white;
+    font-weight: bold;
+    font-family: 'courgette';
+}
+
+.boton {
+    background-color: rgb(108, 105, 100);
+    color: white;
+    font-weight: bold;
+}
+
+.enviar :hover {
+    background-color: rgb(9, 180, 9);
+    transition: all 0.8s ease;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 90px 30px 50px;
+    align-content: center;
+}
+
+.direccion {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-small;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    border-color: grey;
+    border-style: dotted;
+}
+
+/* fin seccion "Contacto" */
+
+#footer {
+    background-image: url(../img/banner-background-foliage-autumn-concept-807056.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    border-top: black;
+    border-top-style: solid;
+}
+
+
+.redes {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+i {
+    font-size: 20px;
+    color: white;
+}
+
+.Copyright {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-small;
+    color: black;
+    font-weight: bold;
+}
+
+.facebook {
+    border-radius: 30%;
+    padding: 5px;
+    background-color: blue;
+}
+
+.instagram {
+    border-radius: 30%;
+    padding: 5px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.youtube {
+    border-radius: 30%;
+    padding: 5px;
+    background-color: red;
+}
+
