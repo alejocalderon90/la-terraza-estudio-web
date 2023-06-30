@@ -154,7 +154,7 @@ img {
     background-image: url(../img/galeria1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw 100 vh;
     background-clip: content-box;
     padding: 100px 60px;
     margin: 30px auto;
