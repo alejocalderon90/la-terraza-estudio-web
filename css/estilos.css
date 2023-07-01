@@ -154,7 +154,7 @@ img {
     background-image: url(../img/galeria1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100vw 100 vh;
+    background-size: 100vw 100vh;
     background-clip: content-box;
     padding: 100px 60px;
     margin: 30px auto;
@@ -173,7 +173,8 @@ img {
     flex-wrap: wrap;
     color: rgb(152, 20, 20);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: x-large;
+    font-weight: bold;
     text-align: center;
     padding: 20px;
 }
@@ -187,7 +188,8 @@ img {
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.445);
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
 }
 
 
@@ -266,26 +268,24 @@ img {
 }
 
 .h3-servicios {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     text-decoration: underline;
-    padding-top: 100px;
-    color: black;
+    width: 100%;
 }
 
 /* fin seccion "servicios" */
 
 /* inicio seccion "equipamiento" */
 #Equipamiento {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: underline;
-    padding-top: 100px;
-    color: black;
+    width: 100%;
 }
 
 .container__equipamiento {
@@ -382,19 +382,17 @@ img {
 }
 
 #Galeria {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 40px;
     text-decoration: underline;
-    padding-top: 30px;
-    color: black;
+    width: 100%;
 }
 
 
 #Fotos {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     text-decoration: underline;
