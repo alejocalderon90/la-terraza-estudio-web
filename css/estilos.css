@@ -645,3 +645,16 @@ i {
     background-color: red;
 }
 
+@media screen and (max-width: 400px) {
+    .grid-container{
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .carousel{
+        display: none;
+    }
+}
