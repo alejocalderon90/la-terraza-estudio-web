@@ -134,11 +134,11 @@ img {
     color: white;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
     margin-left: 120px;
 }
 
-.carousel-control-next{
+.carousel-control-next {
     margin-right: 120px;
 }
 
@@ -244,7 +244,7 @@ img {
     background-image: url(../img/pngtree-white-vintage-brick-wall-literary-banner-image_149156.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .article {
@@ -645,16 +645,21 @@ i {
     background-color: red;
 }
 
-@media screen and (max-width: 400px) {
-    .grid-container{
+@media screen and (max-width: 665px) {
+    .grid-container {
         align-items: center;
         justify-items: center;
     }
 }
 
-
 @media screen and (max-width: 500px) {
+    body{
+        margin-top: 0;
+    }
     .carousel{
         display: none;
     }
 }
+
+
+
