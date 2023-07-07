@@ -1,0 +1,19 @@
+{
+  "name": "la-terraza-web",
+  "version": "1.0.0",
+  "description": "Esta pagina es para un estudio de grabación con sede en la ciudad de Lujan, Buenos Aires.\r Los conocimientos aplicados en este proyecto hasta ahora son: grid, flexbox, botstrap, git, animaciones y transiciones con .target",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/style.scss css/style.css",
+
+"watch-sass": "nodemon -e scss -x  \"npm run build-sass\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^2.0.22"
+  }
+}
