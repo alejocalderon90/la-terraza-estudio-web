@@ -204,7 +204,6 @@ img {
     flex-direction: row;
     align-content: center;
     align-items: center;
-    background-color: #285AEB;
     background: linear-gradient(#e66465, #9198e5, rgb(223, 74, 19));
     background-clip: content-box;
     padding: 20px 10px
