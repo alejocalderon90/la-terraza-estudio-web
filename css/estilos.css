@@ -659,3 +659,12 @@ i {
         display: none;
     }
 }
+
+@media screen and (max-width:500px){
+    .menu__list{
+        display: none;
+    }
+    .nav-link{
+        display: none;
+    }
+}
