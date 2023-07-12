@@ -568,8 +568,8 @@ i {
 
 //fin seccion footer
 //media query
-@media (max-width: 768px) {
-    .offcanvas{
+@media screen and (max-width: 1024px) {
+    .offcanvas {
         flex-wrap: nowrap;
     }
 
@@ -579,7 +579,8 @@ i {
         max-width: 200px;
         overflow-y: auto;
     }
-    .light-box img{
+
+    .light-box img {
         max-height: 255px;
         max-width: 500px;
     }
@@ -590,6 +591,7 @@ i {
         align-items: center;
         justify-items: center;
     }
+
     .menu__list {
         display: none;
     }
