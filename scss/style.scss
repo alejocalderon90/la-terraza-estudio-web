@@ -568,20 +568,13 @@ i {
 
 //fin seccion footer
 //media query
-@media (max-width: 1024px) {
-    .offcanvas{
-        flex-wrap: nowrap;
+@media screen and (max-width: 500px) {
+    body {
+        margin-top: 0;
     }
 
-    .offcanvas-end {
-        flex-direction: column;
-        max-height: 255px;
-        max-width: 200px;
-        overflow-y: auto;
-    }
-    .light-box img{
-        max-height: 255px;
-        max-width: 500px;
+    .carousel {
+        display: none;
     }
 }
 
@@ -595,12 +588,21 @@ i {
     }
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        margin-top: 0;
+@media (max-width: 1024px) {
+    .offcanvas{
+        flex-wrap: nowrap;
     }
-
-    .carousel {
-        display: none;
+    .offcanvas-end {
+        flex-direction: column;
+        max-height: 255px;
+        max-width: 200px;
+        overflow-y: auto;
+    }
+    .light-box img{
+        max-height: 255px;
+        max-width: 500px;
     }
 }
+
+
+
