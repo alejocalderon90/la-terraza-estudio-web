@@ -1,0 +1,37 @@
+@mixin flexible ($display, $direction, $wrap, $justify, $align){
+    display: $display;
+    flex-flow: $direction $wrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin equip ($display, $text, $font, $width, $bd_color, $bd_style, $padding){
+    display: $display;
+    text-align: $text;
+    font-size: $font;
+    width: $width;
+    border-color: $bd_color;
+    border-style: $bd_style;
+    padding: $padding;
+}
+
+@mixin equipimg($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin seccion_fonts($align, $padding, $family, $size, $decoration, $color, $width){
+    text-align: $align;
+    padding-top: $padding;
+    font-family: $family;
+    font-size: $size;
+    text-decoration: $decoration;
+    color: $color;
+    width: width;
+}
+
+@mixin redes($color, $padding, $border-r){
+    background-color: $color;
+    padding: $padding;
+    border-radius: $border-r;
+}

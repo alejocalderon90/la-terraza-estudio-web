@@ -1,30 +1,147 @@
 @import "../scss/utilities/colors";
-@import "../scss/components/buttons";
+@import "../scss/utilities/mixins";
 @import "../scss/globals/resets";
+@import "../scss/components/buttons";
 
+//navbar
+#navbar {
+    @include flexible(flex, row, wrap, space-between, center);
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    max-height: 100px;
+    padding: 10px;
 
-// backgrounds colors
-.caraousel-caption{
-    background-color: $bg_carousel;
-    margin-bottom: 20px;
+    .navbar__box__img {
+        @include flexible(flex, row, wrap, flex-start, center);
+
+        .navbar__img img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+    }
 }
 
+.menu__ul {
+    @include flexible(flex, row, wrap, space-evenly, center);
+    max-width: 70%;
+
+    .menu__item {
+        color: white;
+        font-family: 'courgette';
+        font-size: 1.5rem;
+        transition: all 0.8s ease;
+        padding: 5px;
+    }
+}
+
+.menu__list :hover {
+    background-color: red;
+    padding: 8px;
+    border-radius: 30px;
+}
+
+.navbar-toggler {
+    margin-right: 20px;
+}
+
+.offcanvas-title {
+    text-decoration: underline;
+}
+
+.menu__item__offcanvas {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.8s ease;
+    padding-bottom: 10px;
+
+    &:hover {
+        color: grey;
+        transition: all 0.8s ease;
+    }
+}
+
+.dropdown-item {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+}
+
+//fin navbar
+//inicio carousel
+.carousel {
+    padding-top: 100px;
+
+    &-item {
+        padding: 20px 40px;
+        width: 100%;
+
+        & img {
+            max-height: 500px;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.carousel-caption {
+    background-color: $bg_carousel;
+    margin-bottom: 20px;
+
+    & h5 {
+        text-decoration: underline;
+        font-size: large;
+    }
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: medium;
+}
+
+.carousel-control-prev {
+    margin-left: 120px;
+}
+
+.carousel-control-next {
+    margin-right: 120px;
+}
+
+//fin carousel
+//inicio seccion background "nosotros"
+#Nosotros {
+    @include flexible(flex, row, wrap, center, center);
+    background-image: url(../img/galeria1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    background-clip: content-box;
+    padding: 100px 60px;
+    margin: 30px auto;
+}
+
+.background__img {
+    @include flexible(flex, row, wrap, center, center);
+    width: 100%;
+}
+
+
+
 .title-1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flexible(flex, column, wrap, none, none);
     color: $co_title1;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
     font-weight: bold;
+    text-decoration: underline;
     text-align: center;
     padding: 20px;
 }
 
 .paragraph {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    @include flexible(flex, column, wrap, none, none);
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
@@ -34,24 +151,131 @@
     margin: 20px;
 }
 
+//fin seccion background "nosotros"
+//inicio seccion discos
 #discos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
+    @include flexible(flex, row, wrap, center, center);
     align-content: center;
-    align-items: center;
     background: $bg_discos;
     background-clip: content-box;
     padding: 20px 10px
+}
+
+.nuestros-trabajos {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-decoration: underline;
+    padding: 30px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.albums {
+    @include flexible(flex, row, wrap, center, center);
+    align-content: space-around;
+    padding: 10px;
+}
+
+//fin seccion discos
+//inicio seccion servicios
+#article-box {
+    @include flexible(flex, row, wrap, space-around, flex-start);
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding: 50px 30px;
+    background-image: url(../img/pngtree-white-vintage-brick-wall-literary-banner-image_149156.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article {
+    @include flexible(flex, row, wrap, space-around, center);
+    max-width: 400px;
+
+    & p {
+        text-align: center;
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: medium;
+    }
+}
+
+.imgservicios {
+    width: 100%;
+    height: 200px;
+}
+
+.h3-servicios {
+    @include seccion_fonts(center, 100px, Cambria, 40px, underline, black, 100%)
+}
+
+//fin seccion servicios
+//inicio seccion equipamiento
+#Equipamiento {
+    @include seccion_fonts(center, 100px, Cambria, 40px, underline, black, 100%)
+}
+
+.container__equipamiento {
+    @include flexible(flex, row, wrap, space-around, flex-start);
+    padding: 20px;
+
+    & article h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-size: large;
+        padding: 8px;
+    }
+}
+
+.orange {
+    @include equip(block, left, small, 300px, black, dashed, 8px);
+
+    & img {
+        @include equipimg(100%, 200px);
+    }
+}
+
+.hiwatt {
+    @include equip(block, left, small, 300px, black, dashed, 8px);
+
+    & img {
+        @include equipimg(100%, 200px);
+    }
+}
+
+.universal-audio {
+    @include equip(block, left, small, 300px, black, dashed, 8px);
+
+    & img {
+        @include equipimg(100%, 200px);
+    }
+}
+
+.bateria {
+    @include equip(block, left, small, 300px, black, dashed, 8px);
+
+    & img {
+        @include equipimg(100%, 200px);
+    }
+}
+
+//fin seccion servicios
+//icinio seccion galeria
+#Galeria {
+    @include seccion_fonts(center, 100px, Cambria, 40px, underline, black, 100%)
+}
+
+#Fotos {
+    @include seccion_fonts(center, 100px, Cambria, 20px, underline, black, 100%)
 }
 
 .grid-container {
     display: grid;
     background-image: url(../img/141125859-fondo-de-textura-de-metal-negro.jpg);
     background-attachment: fixed;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 100px);
     border-color: $bg_grid;
     border-style: solid;
     padding: 10px;
@@ -60,7 +284,78 @@
     margin: 20px;
 }
 
+#galeria__1 {
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+
+#galeria__2 {
+    grid-row: 1/3;
+    grid-column: 3/5;
+}
+
+#galeria__3 {
+    grid-row: 1/3;
+    grid-column: 5/7;
+}
+
+#galeria__4 {
+    grid-row: 3/5;
+    grid-column: 1/3;
+}
+
+#galeria__5 {
+    grid-row: 3/5;
+    grid-column: 3/5;
+}
+
+#galeria__6 {
+    grid-row: 3/5;
+    grid-column: 5/7;
+}
+
+#galeria__7 {
+    grid-row: 5/7;
+    grid-column: 1/3;
+}
+
+#galeria__8 {
+    grid-row: 5/7;
+    grid-column: 3/5;
+}
+
+#galeria__9 {
+    grid-row: 5/7;
+    grid-column: 5/7;
+}
+
+#galeria__10 {
+    grid-row: 7/9;
+    grid-column: 1/3;
+}
+
+#galeria__11 {
+    grid-row: 7/9;
+    grid-column: 3/5;
+}
+
+#galeria__12 {
+    grid-row: 7/9;
+    grid-column: 5/7;
+}
+
+.grid-item a {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item :hover {
+    filter: blur(4px);
+    transition: all 0.5s;
+}
+
 .light-box {
+    @include flexible(flex, row, nowrap, center, center);
     position: fixed;
     top: 0;
     left: 0;
@@ -69,24 +364,18 @@
     height: 100vh;
     padding: 50px;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transform: scale(0);
     transition: all 0.3s ease-in-out;
 }
 
-#form {
-    width: 450px;
-    margin: auto;
-    background-color: $bg_form;
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+.light-box img {
+    width: 75vw;
+    max-height: 100vh;
 }
 
-// buttons colors
+.light-box:target {
+    transform: scale(1);
+}
 
 .close {
     display: block;
@@ -115,13 +404,203 @@
     text-align: center;
 }
 
+#Videos {
+    @include seccion_fonts(center, 100px, Cambria, 20px, underline, black, 100%)
+}
+
+.grid-container-video {
+    display: grid;
+    background-image: url(../img/141125859-fondo-de-textura-de-metal-negro.jpg);
+    background-attachment: fixed;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    border-color: rgb(118, 3, 24);
+    border-style: solid;
+    padding: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 20px;
+}
+
+.grid-video6 {
+    grid-row: 3 / 6;
+    grid-column: 3 / 4;
+}
+
+.grid-video5 {
+    grid-row: 3 / 6;
+    grid-column: 2 / 3;
+}
+
+.grid-video4 {
+    grid-row: 3 / 6;
+    grid-column: 1 / 2;
+}
+
+.grid-video3 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+
+.grid-video2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.grid-video1 {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+}
+
+//fin seccion galeria
+//inicio seccion contacto
+.consulta {
+    @include seccion_fonts(center, 100px, Cambria, 40px, underline, black, 100%);
+}
+
+.form__background {
+    display: flex;
+    background-image: url(../img/equipos5.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+}
+
+#form {
+    width: 450px;
+    margin: auto;
+    background-color: $bg_form;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.nombre,
+.email {
+    color: white;
+    font-weight: bold;
+    font-family: 'courgette';
+    font-size: medium;
+}
+
+.box-input p {
+    color: white;
+    font-weight: bold;
+    font-family: 'courgette';
+    font-size: medium;
+}
+
 .boton {
     background-color: $bg_enviar;
     color: white;
     font-weight: bold;
+    font-size: medium;
 }
 
 .enviar :hover {
     background-color: $bg_enviar_hover;
     transition: all 0.8s ease;
+}
+
+.mapa {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 90px 30px 50px;
+    align-content: center;
+}
+
+.direccion {
+    @include flexible(flex, row, wrap, center, center);
+    @include seccion_fonts (center, 20px, Cambria, small, none, grey, 200px);
+    font-weight: bold;
+    padding: 30px;
+    border-style: dotted;
+}
+
+//fin seccion contacto
+//inicio seccion footer
+#footer {
+    background-image: url(../img/banner-background-foliage-autumn-concept-807056.jpg);
+    @include flexible(flex, column, wrap, center, center);
+    width: 100%;
+    border-top: black solid;
+}
+
+.redes {
+    @include flexible(flex, row, wrap, center, center);
+    gap: 30px;
+    padding: 30px;
+}
+
+i {
+    font-size: 20px;
+    color: white;
+}
+
+.Copyright {
+    @include seccion_fonts(center, 20px, Cambria, medium, none, black, 100%);
+    font-weight: bold;
+}
+
+.facebook {
+    @include redes($bg_facebook, 5px, 30%);
+}
+
+.instagram {
+    border-radius: 30%;
+    padding: 5px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.youtube {
+    @include redes($gb_youtube, 5px, 30%);
+}
+
+//fin seccion footer
+//media query
+@media (max-width: 768px) {
+    .offcanvas{
+        flex-wrap: nowrap;
+    }
+
+    .offcanvas-end {
+        flex-direction: column;
+        max-height: 255px;
+        max-width: 200px;
+        overflow-y: auto;
+    }
+    .light-box img{
+        max-height: 255px;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .grid-container {
+        align-items: center;
+        justify-items: center;
+    }
+    .menu__list {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin-top: 0;
+    }
+
+    .carousel {
+        display: none;
+    }
 }

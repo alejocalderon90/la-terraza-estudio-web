@@ -21,70 +21,75 @@
 
 <body>
     <header id="navbar">
-        <div class="navbar__box__img">
-            <a class="navbar__img" href="index.html"><img src="./img/logo-la-terraza.jpg"
-                    alt="logo-la-terraza-estudio"></a>
-        </div>
-        <nav class="navbar__menu">
-            <ul class="menu__ul">
-                <li class="menu__list">
-                    <a class="menu__item" href="#Nosotros">Nosotros</a>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__item" href="#Servicios">Servicios</a>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__item" href="#Equipamiento">Equipamiento</a>
-                </li>
-                <li class="nav-link dropdown-toggle">
-                    <a class="menu__item" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Galeria</a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a class="dropdown-item" href="#Fotos">Fotos</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#Videos">Videos</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__list">
-                    <a class="menu__item" href="#Contacto">Contacto</a>
-                </li>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-dark bg-black fixed-top">
+            <div class="container-fluid">
+                <div class="navbar__box__img">
+                    <a class="navbar__img" href="index.html"><img src="./img/logo-la-terraza.jpg"
+                            alt="logo-la-terraza-estudio"></a>
+                </div>
+                <ul class="menu__ul">
+                    <li class="menu__list">
+                        <a class="menu__item" href="#Nosotros">Nosotros</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__item" href="#Servicios">Servicios</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__item" href="#Equipamiento">Equipamiento</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__item" href="#Galeria">Galeria</a>
+                    </li>
+                    <li class="menu__list">
+                        <a class="menu__item" href="#Contacto">Contacto</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#Nosotros">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="menu__item" href="#Servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="menu__item" href="#Equipamiento">Equipamiento</a>
-                        </li>
-                        <li class="nav-item dropdown-toggle">
-                            <a class="menu__item" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Galeria</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#Fotos">Fotos</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#Videos">Videos</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="menu__item" href="#Contacto">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="menu__list__offcanvas">
+                                <a class="menu__item__offcanvas" href="#Nosotros">Nosotros</a>
+                            </li>
+                            <li class="menu__list__offcanvas">
+                                <a class="menu__item__offcanvas" href="#Servicios">Servicios</a>
+                            </li>
+                            <li class="menu__list__offcanvas">
+                                <a class="menu__item__offcanvas" href="#Equipamiento">Equipamiento</a>
+                            </li>
+                            <li class="menu__list__offcanvas">
+                                <a class="menu__item__offcanvas" href="#Contacto">Contacto</a>
+                            </li>
+                            <li class="nav-link dropdown-toggle">
+                                <a class="menu__item__offcanvas" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Galeria</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#Fotos">Fotos</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#Videos">Videos</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-            </ul>
+            </div>
         </nav>
     </header>
 
@@ -267,14 +272,6 @@
                 músicos como: Pink Floyd, The Who, Jethro Tull, Cold Play, U2, Eagles, The Killers y muchos más...</p>
         </article>
 
-        <article class="bateria">
-            <img src="./img/galeria2.jpg" alt="">
-            <h2>BATERIA YAMAHA DE 4 CUERPOS</h2>
-            <p>Batería acústica Stage Custom de nuevo diseño con bombo de 22", toms aéreos de 12" y 10", tom base de
-                16", caja 14" y soporte de tom TH945C. Incluye el set de herrajes HW680W compuesto por 2 soportes de
-                plato, 1 de hi-hat, 1 de caja y 1 pedal de bombo. Color: Cranberry red. Platos no incluidos.</p>
-        </article>
-
         <article class="universal-audio">
             <img src="./img/servicios.jpg" alt="">
             <h2>UNIVERSAL AUDIO APOLLO X6</h2>
@@ -284,6 +281,14 @@
                 UAD Powered en tiempo real, además de que incluye el sistema de grabación LUNA , que le brinda una
                 aplicación de producción musical totalmente integrada.</P>
         </article>
+
+        <article class="bateria">
+            <img src="./img/galeria2.jpg" alt="">
+            <h2>BATERIA YAMAHA DE 4 CUERPOS</h2>
+            <p>Batería acústica Stage Custom de nuevo diseño con bombo de 22", toms aéreos de 12" y 10", tom base de
+                16", caja 14" y soporte de tom TH945C. Incluye el set de herrajes HW680W compuesto por 2 soportes de
+                plato, 1 de hi-hat, 1 de caja y 1 pedal de bombo. Color: Cranberry red. Platos no incluidos.</p>
+        </article>
     </section>
 
     <h2 id="Galeria">GALERIA</h2>
@@ -291,40 +296,40 @@
     <h4 id="Fotos">Fotos</h4>
 
     <section class="grid-container">
-        <div class="grid-item">
+        <div id="galeria__1" class="grid-item">
             <a href="#galeria1"> <img src="./img/galeria1.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__2" class="grid-item">
             <a href="#galeria2"> <img src="./img/galeria2.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__3" class="grid-item">
             <a href="#galeria3"> <img src="./img/galeria3.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__4" class="grid-item">
             <a href="#galeria4"> <img src="./img/galeria4.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__5" class="grid-item">
             <a href="#galeria5"> <img src="./img/galeria5.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__6" class="grid-item">
             <a href="#galeria6"> <img src="./img/galeria6.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__7" class="grid-item">
             <a href="#galeria7"> <img src="./img/galeria7.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__8" class="grid-item">
             <a href="#galeria8"> <img src="./img/galeria8.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__9" class="grid-item">
             <a href="#galeria9"> <img src="./img/galeria9.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__10" class="grid-item">
             <a href="#galeria10"> <img src="./img/galeria10.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__11" class="grid-item">
             <a href="#galeria11"> <img src="./img/galeria11.jpg" alt=""></a>
         </div>
-        <div class="grid-item">
+        <div id="galeria__12" class="grid-item">
             <a href="#galeria12"> <img src="./img/galeria12.jpg" alt=""></a>
         </div>
     </section>
@@ -421,7 +426,7 @@
     </article>
 
     <h4 id="Videos">Videos</h4>
-    <section class="grid-container">
+    <section class="grid-container-video">
         <div class="grid-video1"> <iframe width="100%" height="100%" src="https://www.youtube.com/embed/P9e9DDVhMCI"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
