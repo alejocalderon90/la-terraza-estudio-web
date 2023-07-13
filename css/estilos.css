@@ -611,7 +611,13 @@ i {
     overflow-y: auto; }
   .light-box img {
     max-height: 500px;
-    max-width: 700px; } }
+    max-width: 700px; }
+  .galeria__10 img {
+    max-height: 300px; }
+  .galeria__11 img {
+    max-height: 300px; }
+  .galeria__12 img {
+    max-height: 300px; } }
 
 @media screen and (max-width: 665px) {
   .grid-container {
