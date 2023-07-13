@@ -579,6 +579,10 @@ i {
     .menu__list {
         display: none;
     }
+    .light-box img {
+        max-height: 400px;
+        max-width: 700px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -591,26 +595,16 @@ i {
         max-width: 200px;
         overflow-y: auto;
     }
-
-    .light-box img {
-        max-height: 500px;
-        max-width: 700px;
-    }
-    #galeria10 img{
-        max-height: 300px;
-    }
-    #galeria11 img{
-        max-height: 300px;
-    }
-    #galeria12 img{
-        max-height: 300px;
-    }
 }
 
 @media screen and (max-width: 665px) {
     .grid-container {
         align-items: center;
         justify-items: center;
+    }
+    .light-box img {
+        max-height: 300px;
+        max-width: 700px;
     }
 }
 
@@ -621,5 +615,9 @@ i {
 
     .carousel {
         display: none;
+    }
+    .light-box img {
+        max-height: 200px;
+        max-width: 700px;
     }
 }
