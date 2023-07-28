@@ -75,7 +75,8 @@ img {
   text-align: center; }
   .offcanvas-title:hover {
     color: gray;
-    transition: all 0.8s ease; }
+    transition: all 0.8s ease;
+    pointer-events: fill; }
 
 .menu__item__offcanvas {
   color: white;
