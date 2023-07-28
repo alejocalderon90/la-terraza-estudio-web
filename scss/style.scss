@@ -51,8 +51,13 @@
     text-decoration: underline;
     font-family: 'Mr Dafoe', cursive;
     font-size: x-large;
+    color: white;
     width: 100%;
     text-align: center;
+    &:hover{
+        color: gray;
+        transition: all 0.8s ease;
+    }
 }
 
 .menu__item__offcanvas {
