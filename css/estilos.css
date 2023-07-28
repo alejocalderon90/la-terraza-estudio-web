@@ -139,7 +139,8 @@ img {
   flex-flow: column wrap;
   justify-content: none;
   align-items: none;
-  color: #981414;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.445);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: x-large;
   font-weight: bold;
@@ -549,7 +550,7 @@ textarea {
   color: grey;
   width: width;
   font-weight: bold;
-  padding: 30px;
+  padding: 30px 400px;
   border-style: dotted; }
 
 #footer {
@@ -617,7 +618,9 @@ i {
     grid-column: 1/4; }
   .grid-video4 {
     grid-row: 3/6;
-    grid-column: 1/4; } }
+    grid-column: 1/4; }
+  .direccion {
+    padding: 30px 50px; } }
 
 @media (max-width: 768px) {
   .offcanvas {
@@ -640,6 +643,9 @@ i {
     margin-top: 0; }
   .carousel {
     display: none; }
+  #Nosotros {
+    padding-left: 0;
+    padding-right: 0; }
   .light-box img {
     max-height: 200px;
     max-width: 700px; } }

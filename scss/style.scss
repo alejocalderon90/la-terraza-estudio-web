@@ -135,7 +135,8 @@
 
 .title-1 {
     @include flexible(flex, column, wrap, none, none);
-    color: $co_title1;
+    color: white;
+    background-color: $bg_paragraph;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: x-large;
     font-weight: bold;
@@ -527,7 +528,7 @@ textarea {
     @include flexible(flex, row, wrap, center, center);
     @include seccion_fonts (center, 20px, Cambria, small, none, grey, 200px);
     font-weight: bold;
-    padding: 30px;
+    padding: 30px 400px;
     border-style: dotted;
 }
 
@@ -603,6 +604,9 @@ i {
         grid-row: 3/6;
         grid-column: 1/4;
     }
+    .direccion{
+        padding: 30px 50px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -635,6 +639,11 @@ i {
 
     .carousel {
         display: none;
+    }
+
+    #Nosotros{
+        padding-left: 0;
+        padding-right: 0;
     }
     .light-box img {
         max-height: 200px;
