@@ -404,7 +404,7 @@ h3 {
     display: grid;
     background-image: url(../img/141125859-fondo-de-textura-de-metal-negro.jpg);
     background-attachment: fixed;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat (6, 1fr);
     grid-template-rows: repeat(8, 100px);
     border-color: $bg_grid;
     border-style: solid;
@@ -415,6 +415,7 @@ h3 {
     width: 90%;
     margin: 0 auto;
 }
+
 
 #galeria__1 {
     grid-row: 1/3;
